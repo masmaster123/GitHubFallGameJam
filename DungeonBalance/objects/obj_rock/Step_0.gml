@@ -20,6 +20,11 @@ if(place_meeting(x,y + vsp, obj_scale)){
 if(position_meeting(mouse_x,mouse_y,id) && mouse_check_button_pressed(mb_left)){
 	currentHealth = scrApproach(currentHealth,0,1);
 	if(currentHealth == 0){
+		for(var i = 0; i< 4; i++){
+			var _rock =	instance_create_layer(x,y,"Instances",obj_rockChunk);
+			_rock.image_index = i;
+			_rock.hsp = -1 + i *.5;
+		}
 		if(scale_meeting != noone)
 			scale_meeting.weight -= weight;
 		instance_destroy(id);
