@@ -1,21 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_skel",
+  "name": "obj_graveStone",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "EnemyObjects",
-    "path": "folders/Objects/EnemyObjects.yy",
+    "name": "FallingObjects",
+    "path": "folders/Objects/FallingObjects.yy",
   },
   "parentObjectId": {
-    "name": "obj_enemy",
-    "path": "objects/obj_enemy/obj_enemy.yy",
+    "name": "obj_rock",
+    "path": "objects/obj_rock/obj_rock.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_skelIdle",
-    "path": "sprites/spr_skelIdle/spr_skelIdle.yy",
+    "name": "spr_graveStone",
+    "path": "sprites/spr_graveStone/spr_graveStone.yy",
   },
   "spriteMaskId": null,
   "visible": true,

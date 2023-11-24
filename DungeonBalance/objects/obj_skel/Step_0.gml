@@ -17,6 +17,7 @@ if(sprite_index == assembleSprite && image_index >= image_number -1){
 		selectable = true;
 }
 
+//Sprite hold until it can reform
 if(isShattered && sprite_index = shatterSprite && image_index >= image_number -1 )
 	image_index = image_number -1;
 	

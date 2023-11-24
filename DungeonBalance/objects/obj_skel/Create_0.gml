@@ -6,7 +6,7 @@ canShatter = true;
 isShattered = false;
 shatterTime = 240;
 
-idleSprite = spr_skel;
+idleSprite = spr_skelIdle;
 shatterSprite = spr_skelShatter;
 assembleSprite = spr_skelAssemble;
 walkingSprite = spr_skelWalk;

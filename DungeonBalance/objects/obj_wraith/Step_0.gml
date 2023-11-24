@@ -27,6 +27,13 @@ if(sprite_index != spr_wraithSpawn && sprite_index != spr_wraithDie){
 	if(grabbedPawn != noone){
 		y = scrApproach(y,0,0.2);
 		grabbedPawn.y = y + sprite_height;
+		if(y == 0){
+			var _g = instance_create_layer(x,y,"Instances",obj_graveStone);
+			_g.weight = grabbedPawn.weight;
+			instance_destroy(grabbedPawn);
+			grabbedPawn = noone;
+			targetPawn = noone;
+		}
 	}
 	
 }
