@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_animatedLavaTop",
+  "name": "spr_animatedLavaBot",
   "bbox_bottom": 15,
   "bbox_left": 16,
   "bbox_right": 143,
-  "bbox_top": 5,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8c3091e0-99d2-46fb-9ddd-cd679ae5f33b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"187453fb-3859-4be5-aa95-88d5e643bde8",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 16,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"efbd7a60-5970-45e3-b78f-ffe19d7e4ba7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"86ebbb32-bd4d-466d-97e4-6346f6ccfb7c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_animatedLavaTop",
+    "name": "spr_animatedLavaBot",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8c3091e0-99d2-46fb-9ddd-cd679ae5f33b","path":"sprites/spr_animatedLavaTop/spr_animatedLavaTop.yy",},},},"Disabled":false,"id":"9268afab-5142-47d1-98c2-c4265a046e38","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"187453fb-3859-4be5-aa95-88d5e643bde8","path":"sprites/spr_animatedLavaBot/spr_animatedLavaBot.yy",},},},"Disabled":false,"id":"a2d0a44b-476a-4450-9dac-81e66d177877","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

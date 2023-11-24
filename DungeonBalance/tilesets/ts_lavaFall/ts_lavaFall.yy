@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "ts_lavaTop",
+  "name": "ts_lavaFall",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
@@ -16,8 +16,8 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "spr_animatedLavaTop",
-    "path": "sprites/spr_animatedLavaTop/spr_animatedLavaTop.yy",
+    "name": "spr_animatedLavaFall",
+    "path": "sprites/spr_animatedLavaFall/spr_animatedLavaFall.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

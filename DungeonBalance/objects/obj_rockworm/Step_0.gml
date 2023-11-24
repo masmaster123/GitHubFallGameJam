@@ -13,7 +13,7 @@ if(sprite_index != deathSprite){
 	if(sprite_index == attackSprite && image_index == 4){
 		var _e =instance_nearest(x,y,obj_enemy);
 		if(_e != noone){
-			var _p = instance_create_layer(x + sprite_width/2,y,"Instances",obj_rockwormProjectile);
+			var _p = instance_create_layer(x + (sprite_width/2) * sign(-image_angle),y,"Instances",obj_rockwormProjectile);
 			_p.direction = point_direction(x,y,_e.x,_e.y);
 			_p.image_angle = _p.direction;
 		}

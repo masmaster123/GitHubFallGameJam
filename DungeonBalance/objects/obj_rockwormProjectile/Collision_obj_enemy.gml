@@ -1,7 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-other.hsp += force;
+if(x < other.x)
+	other.hsp += force;
+else
+	other.hsp -= force;
+	
 instance_destroy(id);
 
 
