@@ -32,6 +32,7 @@ if(sprite_index != spr_wraithSpawn && sprite_index != spr_wraithDie){
 }
 
 if(position_meeting(mouse_x,mouse_y,id) && mouse_check_button_pressed(mb_left) && sprite_index != spr_wraithDie){
+	instance_create_layer(mouse_x,mouse_y,"Instances",obj_hitMarker);
 	currentHealth = scrApproach(currentHealth,0,1);
 	if(currentHealth == 0){
 		if(grabbedPawn != noone)
