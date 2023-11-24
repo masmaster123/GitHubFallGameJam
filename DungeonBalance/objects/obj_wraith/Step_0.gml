@@ -3,7 +3,7 @@
 if(sprite_index == spr_wraithSpawn && image_index >= image_number-1)
 	scrSpriteChange(id,idleSprite,0);
 
-if(sprite_index != spr_wraithSpawn){
+if(sprite_index != spr_wraithSpawn && sprite_index != spr_wraithDie){
 	if(targetPawn == noone){
 		targetPawn = instance_find(obj_enemy,irandom_range(0,instance_number(obj_enemy)));
 	}else{
@@ -31,11 +31,14 @@ if(sprite_index != spr_wraithSpawn){
 	
 }
 
-if(position_meeting(mouse_x,mouse_y,id) && mouse_check_button_pressed(mb_left)){
+if(position_meeting(mouse_x,mouse_y,id) && mouse_check_button_pressed(mb_left) && sprite_index != spr_wraithDie){
 	currentHealth = scrApproach(currentHealth,0,1);
 	if(currentHealth == 0){
 		if(grabbedPawn != noone)
 			grabbedPawn.abducted = false;
-		instance_destroy(id);
+			scrSpriteChange(id,spr_wraithDie,0);
 	}
 }
+
+if(sprite_index == spr_wraithDie && image_index >= image_number - 1)
+	instance_destroy(id);

@@ -23,6 +23,7 @@
     {"name":"inst_785BCFAC","path":"rooms/Room_Level/Room_Level.yy",},
     {"name":"inst_44963D7E","path":"rooms/Room_Level/Room_Level.yy",},
     {"name":"inst_75069BD2","path":"rooms/Room_Level/Room_Level.yy",},
+    {"name":"inst_6981978D","path":"rooms/Room_Level/Room_Level.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -48,6 +49,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_785BCFAC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wraith","path":"objects/obj_wraith/obj_wraith.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":208.0,"y":448.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_44963D7E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":208.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_75069BD2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rockChunk","path":"objects/obj_rockChunk/obj_rockChunk.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.0,"y":384.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6981978D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rockworm","path":"objects/obj_rockworm/obj_rockworm.yy",},"properties":[],"rotation":-90.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":432.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"ts_background","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":34,"SerialiseWidth":30,"TileCompressedData":[
 5,9,10,-2147483648,-2147483648,68,-6,-2147483648,2,268435532,-2147483648,-5,0,1,68,-6,-2147483648,10,268435532,-2147483648,-2147483648,0,0,9,10,-2147483648,-2147483648,76,-6,-2147483648,
