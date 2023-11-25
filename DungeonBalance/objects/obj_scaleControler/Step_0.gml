@@ -26,7 +26,16 @@ if(mouse_check_button(mb_left)){
 	}
 }
 
-show_debug_message(mouseResetTime);
+//Cursor reset
+if(mouse_check_button_pressed(mb_right)){
+	var _pawn = instance_nearest(x,y,obj_enemy);
+		if(_pawn != noone){
+			_pawn.past_mouse_x = mouse_x;
+			_pawn.past_mouse_y = mouse_y;
+		}
+}
+
+//show_debug_message(mouseResetTime);
 
 //Debug 
 if(keyboard_check_pressed(vk_space)){
@@ -34,7 +43,14 @@ if(keyboard_check_pressed(vk_space)){
 	show_debug_message(scale_right.current_speed);
 }
 
+if(scale_left.y >= 512 || scale_right.y >= 512 ){
+	scale_left.roundLost = true;
+	scale_right.roundLost = true;
+}
+
+
 if(keyboard_check_pressed(vk_escape))
 	game_end();
 
+//keep mouse in frame
 window_mouse_set(clamp(window_mouse_get_x(), 0, window_get_width()), clamp(window_mouse_get_y(), 0, window_get_height()));

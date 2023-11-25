@@ -7,7 +7,7 @@ maxVsp = 4;
 minVsp = 4;
 maxHsp = 5;
 minHsp = 5
-scaleFriction = 0.2;
+scaleFriction = 0.5;
 
 pointsWorth = 1;
 

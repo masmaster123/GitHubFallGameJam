@@ -2,8 +2,15 @@
 // You can write your code in this editor
 
 if(mouse_check_button_pressed(mb_left)){
-	if(dialogCounter < array_length(dialogArray) - 1)
+	if(dialogCounter < array_length(dialogArray) - 1){
 		dialogCounter += 1;
+		
+		/*
+		switch(){
+		
+		}*/
+		
+	}
 	else{
 		switch(sceneIndex){
 			case 0: 
