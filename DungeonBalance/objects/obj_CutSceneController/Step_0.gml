@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 if(mouse_check_button_pressed(mb_left)){
 	if(dialogCounter < array_length(dialogArray) - 1){
 		dialogCounter += 1;
@@ -11,7 +8,7 @@ if(mouse_check_button_pressed(mb_left)){
 		}*/
 		
 	}
-	else{
+	 else{
 		switch(sceneIndex){
 			case 0: 
 				room_goto(Room_LevelOne);
@@ -37,3 +34,7 @@ if(mouse_check_button_pressed(mb_left)){
 		}
 	}
 }
+
+
+
+displayText = dialogArray[dialogCounter]

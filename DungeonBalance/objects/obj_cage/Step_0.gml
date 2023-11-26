@@ -12,6 +12,9 @@ if(room != Room_Cutscene){
 		show_debug_message("Round Complted");
 		cageMoving = false;
 	}
+	if(obj_roundControllerParent.roundLost){
+		y = scrApproach(y,room_height,1);
+	}
 }else{
 	if(y != targetY)
 		y = scrApproach(y,targetY,moveSpeed);

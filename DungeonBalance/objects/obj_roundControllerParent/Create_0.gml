@@ -11,4 +11,5 @@ scaleRightX[0] = 300;
 scaleRightX[1] = 380;
 spawnCounter = 0;
 
-roundOver = false;
+roundLost = false;
+roundWon = false;

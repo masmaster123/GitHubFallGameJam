@@ -43,10 +43,16 @@ if(keyboard_check_pressed(vk_space)){
 	show_debug_message(scale_right.current_speed);
 }
 
-if(scale_left.y >= 512 || scale_right.y >= 512 ){
+if(scale_left.y >= 500 || scale_right.y >= 500 ){
 	scale_left.roundLost = true;
 	scale_right.roundLost = true;
+	obj_roundControllerParent.roundLost = true;
+	roundLost = true;
 }
+
+
+if(roundLost && keyboard_check(ord("R")))
+	room_restart();
 
 
 if(keyboard_check_pressed(vk_escape))
