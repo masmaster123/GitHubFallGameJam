@@ -1,6 +1,8 @@
-if(room != Room_Cutscene)
+if(room != Room_Cutscene && room != Room_Title){
 	y = obj_cage.bbox_bottom - 4;
-
+	x = obj_cage.x;
+	targetX = x;
+}
 
 if(x != targetX){
 	x = scrApproach(x,targetX,walkSpeed);
@@ -12,3 +14,7 @@ if(x == targetX){
 	if(sprite_index != idleSprite)
 		scrSpriteChange(id,idleSprite,0);
 }
+
+
+if(keyboard_check_pressed(vk_enter))
+	room_goto_next();

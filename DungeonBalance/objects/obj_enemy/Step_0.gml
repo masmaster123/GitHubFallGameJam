@@ -1,27 +1,34 @@
 
 if(!selected && !abducted){
-		vsp = vsp + gravity_speed;
+		vsp += gravity_speed;
 		vsp = clamp(vsp,-minVsp,maxVsp);
-		if(place_meeting(x,y + vsp, obj_scale)){
+		
+		if(place_meeting(x,y + 1 + vsp, obj_scale)){
 			if(scale_meeting == noone){
-				scale_meeting = instance_place(x,y + vsp,obj_scale);
+				scale_meeting = instance_place(x,y + 1 + vsp,obj_scale);
 				scale_meeting.weight += weight;
+				y = scale_meeting.bbox_top;
+				vsp = 0;
 			}else if(scale_meeting != noone){
 				//vsp = scale_meeting.current_speed;
 				y = scale_meeting.bbox_top;
+				vsp = 0;
 				//apply friction
-				hsp = scrApproach(hsp,0,scaleFriction);
+				if(sprite_index != walkingSprite){
+					hsp = scrApproach(hsp,0,scaleFriction);
+				}
 				//show_debug_message(hsp);
 				//show_debug_message("Scale Friction");
 			}
-		}else{
-			if(!yLocked)
-				y += vsp; // Enemy not on scale, apply speed
+		}
+		if(!yLocked){
+			y += vsp;
 		}
 	}
+	
 
 	//Remove weight if pawn is nologer touching the scale
-	if(scale_meeting != noone && !place_meeting(x,y + vsp,obj_scale)){
+	if(scale_meeting != noone && !place_meeting(x,y + 2 + vsp,obj_scale)){
 		scale_meeting.weight -= weight;
 		scale_meeting = noone;
 	}

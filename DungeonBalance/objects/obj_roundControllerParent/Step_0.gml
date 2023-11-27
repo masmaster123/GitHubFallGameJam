@@ -17,5 +17,5 @@ if(!roundLost){
 if(roundWon && !obj_cage.cageMoving && mouse_check_button(mb_left)){
 	obj_playerPawn.x = 0;
 	obj_playerPawn.y = 224;
-	room_goto(Room_Cutscene);
+	room_goto_next();
 }
