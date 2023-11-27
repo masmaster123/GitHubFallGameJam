@@ -10,9 +10,11 @@ if(!selected && !abducted){
 				y = scale_meeting.bbox_top;
 				vsp = 0;
 			}else if(scale_meeting != noone){
-				//vsp = scale_meeting.current_speed;
 				y = scale_meeting.bbox_top;
-				vsp = 0;
+				if(scale_meeting.weight < 0)
+					vsp = 0;
+				else
+					vsp = scale_meeting.current_speed;
 				//apply friction
 				if(sprite_index != walkingSprite){
 					hsp = scrApproach(hsp,0,scaleFriction);
