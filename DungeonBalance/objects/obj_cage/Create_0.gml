@@ -3,7 +3,7 @@
 cageMoving = false;
 roundOver = false;
 
-targetY = 160;
+targetY = y;
 moveSpeed = 1;
 
 roomFloor = 160;

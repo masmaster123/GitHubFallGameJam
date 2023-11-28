@@ -1,7 +1,11 @@
 if(room != Room_Cutscene && room != Room_Title){
 	y = obj_cage.bbox_bottom - 4;
-	x = obj_cage.x;
+	x = obj_cage.x + 2;
 	targetX = x;
+	if(mouse_x < x)
+		image_xscale = -1;
+	else
+		image_xscale = 1;
 }
 
 if(x != targetX){

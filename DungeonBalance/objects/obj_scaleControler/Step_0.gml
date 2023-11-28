@@ -1,16 +1,24 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-if(scale_left.weight < scale_right.weight){
-	scale_left.current_speed = scale_left.weight - scale_right.weight;
-	scale_right.current_speed = scale_right.weight - scale_left.weight;
-}else if (scale_left.weight > scale_right.weight){
-	scale_left.current_speed = scale_left.weight - scale_right.weight;
-	scale_right.current_speed = scale_right.weight - scale_left.weight;
-}else if(scale_left.weight == scale_right.weight){
-	scale_left.current_speed = 0;
-	scale_right.current_speed = 0;
+if(room != Room_Cutscene){
+	if(scale_left.weight < scale_right.weight){
+		scale_left.current_speed = scale_left.weight - scale_right.weight;
+		scale_right.current_speed = scale_right.weight - scale_left.weight;
+	}else if (scale_left.weight > scale_right.weight){
+		scale_left.current_speed = scale_left.weight - scale_right.weight;
+		scale_right.current_speed = scale_right.weight - scale_left.weight;
+	}else if(scale_left.weight == scale_right.weight){
+		scale_left.current_speed = 0;
+		scale_right.current_speed = 0;
+	}
+	
+	if(scale_left.y >= 500 || scale_right.y >= 500 ){
+		scale_left.roundLost = true;
+		scale_right.roundLost = true;
+		obj_roundControllerParent.roundLost = true;
+		roundLost = true;
+	}
 }
 
 
@@ -43,12 +51,6 @@ if(keyboard_check_pressed(vk_space)){
 	show_debug_message(scale_right.current_speed);
 }
 
-if(scale_left.y >= 500 || scale_right.y >= 500 ){
-	scale_left.roundLost = true;
-	scale_right.roundLost = true;
-	obj_roundControllerParent.roundLost = true;
-	roundLost = true;
-}
 
 
 if(roundLost && keyboard_check(ord("R")))

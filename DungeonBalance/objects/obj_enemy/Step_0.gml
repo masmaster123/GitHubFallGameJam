@@ -23,13 +23,19 @@ if(!selected && !abducted){
 				//show_debug_message("Scale Friction");
 			}
 		}
+		if(place_meeting(x,y + 1 + vsp, obj_floor)){
+			vsp = 0;
+			hsp = scrApproach(hsp,0,scaleFriction);
+			if(instance_place(x,y + 1 + vsp,obj_floor) != noone)
+				y = instance_place(x,y + 1 + vsp,obj_floor).bbox_top;
+		}
 		if(!yLocked){
 			y += vsp;
 		}
 	}
 	
 
-	//Remove weight if pawn is nologer touching the scale
+	//Remove weight if pawn is not touching the scale
 	if(scale_meeting != noone && !place_meeting(x,y + 2 + vsp,obj_scale)){
 		scale_meeting.weight -= weight;
 		scale_meeting = noone;
