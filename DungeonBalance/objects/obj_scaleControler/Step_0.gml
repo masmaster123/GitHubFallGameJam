@@ -21,7 +21,7 @@ if(room != Room_Cutscene){
 	}
 }
 
-
+//If the cursor does not move for one min, reset mouse x/y
 if(mouse_check_button(mb_left)){
 	mouseResetTime = scrApproach(mouseResetTime,0,delta_time / 1000000);
 	if(mouseResetTime == 0){
@@ -42,15 +42,6 @@ if(mouse_check_button_pressed(mb_right)){
 			_pawn.past_mouse_y = mouse_y;
 		}
 }
-
-//show_debug_message(mouseResetTime);
-
-//Debug 
-if(keyboard_check_pressed(vk_space)){
-	show_debug_message(scale_left.current_speed);
-	show_debug_message(scale_right.current_speed);
-}
-
 
 
 if(roundLost && keyboard_check(ord("R")))

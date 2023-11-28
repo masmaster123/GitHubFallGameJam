@@ -5,7 +5,16 @@ if(obj_cage.y != obj_cage.roomFloor){
 	x = obj_cage.x;
 	y = obj_cage.bbox_bottom - 1;
 }else{
-	instance_create_layer(x,y,"Instances",obj_goblin);
+	switch(sprite_index){
+		case spr_gobIdle:
+		instance_create_layer(x,y,"Instances",obj_goblin);
+		break;
+		case spr_skelIdle:
+		instance_create_layer(x,y,"Instances",obj_skel);
+		break;
+	
+	}
+
 	instance_destroy(id);
 }
 

@@ -6,6 +6,7 @@
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"Cages","order":12,"path":"folders/Objects/Cages.yy",},
+    {"name":"Collisions","order":24,"path":"folders/Objects/Collisions.yy",},
     {"name":"EnemyObjects","order":10,"path":"folders/Objects/EnemyObjects.yy",},
     {"name":"FallingObjects","order":15,"path":"folders/Objects/FallingObjects.yy",},
     {"name":"RoundControllers","order":21,"path":"folders/Objects/RoundControllers.yy",},
@@ -41,7 +42,6 @@
     {"name":"Wraith","order":12,"path":"folders/Sprites/Wraith.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Collisions","order":24,"path":"folders/Objects/Collisions.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_Ogre","order":2,"path":"objects/obj_Ogre/obj_Ogre.yy",},
