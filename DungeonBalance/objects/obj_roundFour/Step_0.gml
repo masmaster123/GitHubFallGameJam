@@ -9,7 +9,7 @@ if(!roundLost){
 	}
 
 	if(roundTime >= 10.00 && spawnCounter == 1){
-		SpawnPawns(obj_Ogre,scaleRightX[0] + 32,200,16,0,1);
+		SpawnPawns(obj_ogre,scaleRightX[0] + 32,200,16,0,1);
 		spawnCounter++;
 	}
 
@@ -19,7 +19,7 @@ if(!roundLost){
 	}
 
 	if(roundTime >= 20.00 && spawnCounter == 3){
-		SpawnPawns(obj_Ogre,scaleRightX[0],200,8,16,2);
+		SpawnPawns(obj_ogre,scaleRightX[0],200,8,16,2);
 		spawnCounter++;
 	}
 	

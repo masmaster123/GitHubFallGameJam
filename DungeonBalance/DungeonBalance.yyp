@@ -61,7 +61,7 @@
     "IDEVersion": "2023.8.2.108",
   },
   "resources": [
-    {"id":{"name":"obj_Ogre","path":"objects/obj_Ogre/obj_Ogre.yy",},},
+    {"id":{"name":"obj_ogre","path":"objects/obj_ogre/obj_ogre.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"scribble","path":"scripts/scribble/scribble.yy",},},
     {"id":{"name":"ts_lava","path":"tilesets/ts_lava/ts_lava.yy",},},

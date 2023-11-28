@@ -44,7 +44,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"obj_Ogre","order":2,"path":"objects/obj_Ogre/obj_Ogre.yy",},
+    {"name":"obj_ogre","order":2,"path":"objects/obj_ogre/obj_ogre.yy",},
     {"name":"scribble","order":8,"path":"scripts/scribble/scribble.yy",},
     {"name":"__scribble_class_font","order":2,"path":"scripts/__scribble_class_font/__scribble_class_font.yy",},
     {"name":"obj_cageRider","order":3,"path":"objects/obj_cageRider/obj_cageRider.yy",},

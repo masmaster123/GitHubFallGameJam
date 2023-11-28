@@ -29,6 +29,21 @@ dialogArrayTwo[8] = "I didn't have to as they were falling into the lava pit at 
 dialogArrayTwo[9] = "Why do they have to be such boneheads?";
 dialogArrayTwo[10] = "It is in their nature, I suppose. Toss the skeleton on the platform when you are ready for the next level.";
 
+//Cutscene three dialog
+dialogArrayThree[0] = "Great work as always, but things are about to get a bit harder.";
+dialogArrayThree[1] = "How so, my lord?";
+dialogArrayThree[2] = "Orges, They are rotund and down with the thickness.";
+dialogArrayThree[3] = "They got to get down, down with the thickness?";
+dialogArrayThree[4] = "Exactly, not only are they heavy, if you try and chunk them with your Mage Hand the air resistance is so strong they will barely move anywhere.";
+dialogArrayThree[5] = "How will I move them, my lord?";
+dialogArrayThree[6] = "Same as the rest, you just won't be able to fling them like the others.";
+dialogArrayThree[7] = "Put the thicc boi on the platform when you are ready for the next level.";
+
+dialogArrayFour[0] = "";
+dialogArrayFive[0] = "";
+dialogArraySix[0] = "";
+dialogArraySeven[0] = "";
+
 
 dialogArray = dialogArrayOne;
 dialogCounter = 0;
