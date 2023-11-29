@@ -240,7 +240,49 @@ if(mouse_check_button_pressed(mb_left) && !dialogePaused){
 		
 			}
 		}
+		if(obj_playerPawn.playerLevel == 5){
+			//Check and change text position
+			switch(dialogCounter){
+				case 0:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					break;
+				
+				case 1:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+					break;
+				
+				case 2:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					break;
+				
+				case 3:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+					break;
+				case 4:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					break;
+				case 5:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+					break;
+				
+				case 6:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					break;
+				
+				case 8:
+					dialogePaused = true;
+					scrSpriteChange(obj_rockworm,spr_rockWormIdle,0);
+					break;
 		
+			}
+		}
 		textX = textBoxX + textXPadding;
 		textY = textBoxY + textYPadding;
 	}
@@ -263,10 +305,10 @@ if(mouse_check_button_pressed(mb_left) && !dialogePaused){
 				var target_room = Room_LevelFive;
 			break;
 			case 5: 
-				var target_room = Room_LevelOne;
+				var target_room = Room_LevelSix;
 			break;
 			case 6: 
-				var target_room = Room_LevelOne;
+				var target_room = Room_LevelSeven;
 			break;
 		}
 		var _transition = instance_create_layer(0, 0, "Instances", obj_transitionPixelate);

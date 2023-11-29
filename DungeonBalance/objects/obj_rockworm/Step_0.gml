@@ -1,6 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(room == Room_Cutscene){
+	if(!obj_CutSceneController.dialogePaused){
+		sprite_index = deathSprite;
+		image_index = image_number -1;
+	}
+}
+
+
 if(sprite_index != deathSprite){
 	//Start Attack
 	if(canAttack && sprite_index != attackSprite){
@@ -29,8 +37,11 @@ if(sprite_index != deathSprite){
 	if(position_meeting(mouse_x,mouse_y,id) && mouse_check_button_pressed(mb_left)){
 		instance_create_layer(mouse_x,mouse_y,"Instances",obj_hitMarker);
 		currentHealth = scrApproach(currentHealth,0,1);
-		if(currentHealth == 0)
+		if(currentHealth == 0){
+			if(room == Room_Cutscene)
+				obj_CutSceneController.dialogePaused = false;
 			scrSpriteChange(id,deathSprite,0);
+		}
 	}
 
 }

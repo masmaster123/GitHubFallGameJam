@@ -10,6 +10,10 @@ if(sprite_index != spr_wraithSpawn && sprite_index != spr_wraithDie){
 		if(targetPawn.y < room_height){
 			if(x != targetPawn.x){
 				x = scrApproach(x,targetPawn.x,wraithSpeed);
+				if(x < targetPawn.x + 5)
+					image_xscale =	1;
+				else
+					image_xscale = -1;
 			}
 			if(y != targetPawn.bbox_top - sprite_height){
 				y = scrApproach(y,targetPawn.y - sprite_height,wraithSpeed);
@@ -34,6 +38,9 @@ if(sprite_index != spr_wraithSpawn && sprite_index != spr_wraithDie){
 			instance_destroy(grabbedPawn);
 			grabbedPawn = noone;
 			targetPawn = noone;
+			if(room == Room_Cutscene){
+				obj_CutSceneController.dialogePaused = false;
+			}
 		}
 	}
 	

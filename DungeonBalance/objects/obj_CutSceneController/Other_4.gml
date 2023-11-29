@@ -26,6 +26,8 @@ switch(obj_playerPawn.playerLevel){
 	
 	case 5:
 		dialogArray = dialogArraySix;
+		var _w = instance_create_layer(300,32,"Instances",obj_rockworm);
+		_w.image_angle = 180;
 		break;
 	
 	case 6:

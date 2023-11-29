@@ -60,7 +60,16 @@ dialogArrayFive[8] = "Timmy, the life loving goblin will assist us with a demons
 
 
 
-dialogArraySix[0] = "";
+dialogArraySix[0] = "I have good news and I have bad news for you, my loyal subject.";
+dialogArraySix[1] = "What is the bad news, my lord?";
+dialogArraySix[2] = "The last two levels of the dungeon are currently suffering from a rockworm infestation.";
+dialogArraySix[3] = "Disgusting creatures, snorting snotty missiles all over the place.";
+dialogArraySix[4] = "You shall deal with them in the same way as you have dealt with the wraiths and debris.";
+dialogArraySix[5] = "Clicking on them until they explode?";
+dialogArraySix[6] = "Clicking on them until they explode.";
+dialogArraySix[7] = "The good news is that you only have one more level to balance left before you have rebalanced the dungeon.";
+dialogArraySix[8] = "Just splat the rockworm on the ceiling to start the next level.";
+
 dialogArraySeven[0] = "";
 
 
