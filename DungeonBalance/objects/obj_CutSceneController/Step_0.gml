@@ -160,6 +160,86 @@ if(mouse_check_button_pressed(mb_left) && !dialogePaused){
 			}
 		}
 		
+		if(obj_playerPawn.playerLevel == 3){
+			//Check and change text position
+			switch(dialogCounter){
+				case 0:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+				break;
+				case 1:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+				break;
+				case 2:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+				break;
+				case 3:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+
+				break;
+				case 4:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+				break;
+				case 5:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+
+				break;
+				case 6:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					dialogePaused = true;
+					instance_create_layer(240,0,"Instances",obj_rock);
+				break;
+		
+			}
+		}
+		
+		if(obj_playerPawn.playerLevel == 4){
+			//Check and change text position
+			switch(dialogCounter){
+				case 0:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+				break;
+				case 1:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+				break;
+				case 2:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+				break;
+				case 4:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+				break;
+				case 5:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+				break;
+				case 6:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+				break;
+				case 7:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+				break;
+				case 8:
+					dialogePaused = true;
+					obj_cage.targetY = obj_cage.roomFloor;
+					instance_create_layer(240,0,"Instances",obj_goblin);
+					var _rider = instance_create_layer(0,0,"Instances",obj_cageRider);
+					_rider.sprite_index = spr_wraithIdle;
+				break;
+		
+			}
+		}
 		
 		textX = textBoxX + textXPadding;
 		textY = textBoxY + textYPadding;
@@ -180,7 +260,7 @@ if(mouse_check_button_pressed(mb_left) && !dialogePaused){
 				var target_room = Room_LevelFour;
 			break;
 			case 4: 
-				var target_room = Room_LevelOne;
+				var target_room = Room_LevelFive;
 			break;
 			case 5: 
 				var target_room = Room_LevelOne;

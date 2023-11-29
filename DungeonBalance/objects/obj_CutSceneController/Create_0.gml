@@ -1,4 +1,3 @@
-
 typist = scribble_typist();
 typist.in(1, 0);
 
@@ -16,6 +15,7 @@ dialogArrayOne[6] = "Make sure to prepare the spell Mage Hand as you will need t
 dialogArrayOne[7] = "My lord, The new elevator is just a cage hanging from a chain . . .";
 dialogArrayOne[8] = "When you are ready, toss the goblin with Mage Hand onto the platform by clicking on it and holding the left mouse button.";
 dialogArrayOne[9] = "Fantastic Work!\nReport back here tommorrow after you finish balancing the first floor.";
+
 //Cutscene two dialog
 dialogArrayTwo[0] = "Good job handling the new balance system yesterday. I hope you will continue such a level of excellence for today as well.";
 dialogArrayTwo[1] = "I live to serve, my lord.";
@@ -39,8 +39,27 @@ dialogArrayThree[5] = "How will I move them, my lord?";
 dialogArrayThree[6] = "Same as the rest, you just won't be able to fling them like the others.";
 dialogArrayThree[7] = "Put the thicc boi on the platform when you are ready for the next level.";
 
-dialogArrayFour[0] = "";
-dialogArrayFive[0] = "";
+dialogArrayFour[0] = "Chancellor, I am constantly having new problems hoisted upon me.";
+dialogArrayFour[1] = "What plagues you, my lord?";
+dialogArrayFour[2] = "Shoddy craftsmenship! Whoever built the new balance system didn't clear away all of the loose rubble and occasionally it falls down around me.";
+dialogArrayFour[3] = "This is quite a serious issue my lord! What if it falls upon the scales?";
+dialogArrayFour[4] = "Worry not, my loyal subject for I have a solution! Use the magic spell Break on it by clicking on the rock 5 times.";
+dialogArrayFour[5] = "Look my lord, another rocky menace drops from the ceiling!";
+dialogArrayFour[6] = "Click on the rock five times when you are ready to head to the next level!";
+
+
+dialogArrayFive[0] = "Chancellor, how many of our mobs have we lost to the lava pit?";
+dialogArrayFive[1] = "Too many to count, my lord . . .";
+dialogArrayFive[2] = "That explains the amount of new wraiths I have seen haunting these halls. From this level onward, any that fall into the lava pit will spawn tombstones on the scales.";
+dialogArrayFive[3] = "These astral constructs cannot be removed, even by magical means. Do your best to work around them.";
+dialogArrayFive[4] = "That shouldn't be a problem, my lord.";
+dialogArrayFive[5] = "That's not all, wraiths will now spawn and attempt to steal our mobs. Don't let them get too far away or they will turn your mobs into a tombstone.";
+dialogArrayFive[6] = "My Lord! How can I deal with the flying trash bag of a specter?";
+dialogArrayFive[7] = "Same way you have dealt with the falling debris, click on it until it breaks.";
+dialogArrayFive[8] = "Timmy, the life loving goblin will assist us with a demonstration. Make sure to save him and then head to the next level.";
+
+
+
 dialogArraySix[0] = "";
 dialogArraySeven[0] = "";
 
@@ -66,6 +85,8 @@ textYPadding = 4;
 //Add padding so the text is not drawn on the border
 textX = textBoxX + textXPadding;
 textY = textBoxY + textYPadding;
+
+savedTim = false;
 
 //Send player pawn to location
 obj_playerPawn.targetX = 237;

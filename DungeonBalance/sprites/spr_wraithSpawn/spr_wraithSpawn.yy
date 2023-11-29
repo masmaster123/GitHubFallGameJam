@@ -29,7 +29,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fc5b3861-208d-49e8-8a00-693a36d96eb0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 7,
   "parent": {
     "name": "Wraith",
     "path": "folders/Sprites/Wraith.yy",
@@ -72,7 +72,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 16,
-    "yorigin": 16,
+    "yorigin": 32,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

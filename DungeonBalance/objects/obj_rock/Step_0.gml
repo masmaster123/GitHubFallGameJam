@@ -3,6 +3,12 @@ event_inherited();
 
 vsp = vsp + gravity_speed;
 vsp = clamp(vsp,-minVsp,maxVsp);
+
+if(place_meeting(x,y + 1 + vsp, obj_floor)){
+	y = instance_place(x,y + 1 + vsp, obj_floor).bbox_top;
+	vsp = 0;
+}
+
 if(place_meeting(x,y + vsp, obj_scale)){
 	if(scale_meeting == noone){
 		scale_meeting = instance_place(x,y + vsp,obj_scale);
@@ -28,6 +34,13 @@ if(position_meeting(mouse_x,mouse_y,id) && isDestructable && mouse_check_button_
 		}
 		if(scale_meeting != noone)
 			scale_meeting.weight -= weight;
+		if(room == Room_Cutscene){
+			var _transition = instance_create_layer(0, 0, "Instances", obj_transitionPixelate);
+			_transition.target_room = Room_LevelFour;
+		}
 		instance_destroy(id);
 	}
 }
+//Delete when outside the room
+if(y > room_height + sprite_height)
+	instance_destroy(id);

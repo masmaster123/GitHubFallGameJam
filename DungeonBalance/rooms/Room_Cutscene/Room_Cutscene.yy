@@ -10,7 +10,6 @@
     {"name":"inst_278A03E6","path":"rooms/Room_Cutscene/Room_Cutscene.yy",},
     {"name":"inst_29CF75E0","path":"rooms/Room_Cutscene/Room_Cutscene.yy",},
     {"name":"inst_E0392D4","path":"rooms/Room_Cutscene/Room_Cutscene.yy",},
-    {"name":"inst_778D7EF9","path":"rooms/Room_Cutscene/Room_Cutscene.yy",},
     {"name":"inst_29D13E3C","path":"rooms/Room_Cutscene/Room_Cutscene.yy",},
     {"name":"inst_614742C6","path":"rooms/Room_Cutscene/Room_Cutscene.yy",},
     {"name":"inst_FCF5A0B","path":"rooms/Room_Cutscene/Room_Cutscene.yy",},
@@ -28,7 +27,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_FCF5A0B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":14.0,"x":464.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3A84CC92","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":14.0,"x":0.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_B796983","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":224.0,"y":160.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_778D7EF9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_playerPawn","path":"objects/obj_playerPawn/obj_playerPawn.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":224.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"ts_forground","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
 1,8,-12,-2147483648,4,10,4,1073741828,268435466,-8,-2147483648,9,10,-2147483648,-2147483648,268435466,9,16,17,67,67,-4,17,-2,67,-3,17,4,18,1879048196,

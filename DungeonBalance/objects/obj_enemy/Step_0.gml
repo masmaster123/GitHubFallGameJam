@@ -89,7 +89,17 @@ if(!selected && !abducted){
 
 	//out of room cleanup
 	if(y > room_height + 32){
-		instance_destroy(id);
+		if(room != Room_LevelFive && room != Room_LevelSix && room != Room_LevelSeven)
+			instance_destroy(id);
+		else{
+			if(x < room_width / 2)
+				var _x = irandom_range(100,175);
+			else
+				var _x = irandom_range(320,380);
+			var _g = instance_create_layer(_x,200,"Instances",obj_graveStone);
+			_g.weight = weight;
+			instance_destroy(id);
+		}
 	}
 
 	if(selected && !instance_place(mouse_x,mouse_y,obj_wall)){

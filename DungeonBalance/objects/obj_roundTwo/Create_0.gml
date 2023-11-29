@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
-roundName = "Round Two";
+roundName = "Level Two";
 roundTimeLimit = 60;

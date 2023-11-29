@@ -17,5 +17,7 @@ if(!roundLost){
 if(roundWon && !obj_cage.cageMoving && mouse_check_button(mb_left)){
 	obj_playerPawn.x = 0;
 	obj_playerPawn.y = 224;
+	obj_playerPawn.playerLevel++;
+	show_message(obj_playerPawn.playerLevel);
 	var _transition = instance_create_layer(0, 0, "Instances", obj_transitionPixelate);
 }

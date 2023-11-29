@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_wraith",
+  "name": "obj_roundSeven",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -9,10 +9,13 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "EnemyObjects",
-    "path": "folders/Objects/EnemyObjects.yy",
+    "name": "RoundControllers",
+    "path": "folders/Objects/RoundControllers.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_roundControllerParent",
+    "path": "objects/obj_roundControllerParent/obj_roundControllerParent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_wraithSpawn",
-    "path": "sprites/spr_wraithSpawn/spr_wraithSpawn.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

@@ -5,8 +5,8 @@
 switch(obj_playerPawn.playerLevel){
 	
 	case 0:
-		dialogArray = dialogArrayOne;
-		break;
+	dialogArray = dialogArrayOne;
+	break;
 	
 	case 1:
 		dialogArray = dialogArrayTwo;
