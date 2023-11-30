@@ -87,6 +87,7 @@
     {"name":"scribble_font_bake_outline_8dir","order":1,"path":"scripts/scribble_font_bake_outline_8dir/scribble_font_bake_outline_8dir.yy",},
     {"name":"scribble_super_create","order":1,"path":"scripts/scribble_super_create/scribble_super_create.yy",},
     {"name":"scribble_font_combine","order":5,"path":"scripts/scribble_font_combine/scribble_font_combine.yy",},
+    {"name":"spr_orcAttack","order":2,"path":"sprites/spr_orcAttack/spr_orcAttack.yy",},
     {"name":"Room_Title","order":1,"path":"rooms/Room_Title/Room_Title.yy",},
     {"name":"__scribble_font_add_from_project","order":6,"path":"scripts/__scribble_font_add_from_project/__scribble_font_add_from_project.yy",},
     {"name":"obj_destructable","order":1,"path":"objects/obj_destructable/obj_destructable.yy",},

@@ -283,6 +283,55 @@ if(mouse_check_button_pressed(mb_left) && !dialogePaused){
 		
 			}
 		}
+		if(obj_playerPawn.playerLevel == 6){
+			//Check and change text position
+			switch(dialogCounter){
+				case 0:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					break;
+				
+				case 1:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+					break;
+				
+				case 2:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					break;
+				
+				case 3:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+					break;
+				case 4:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					break;
+				case 5:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+					break;
+				
+				case 6:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					break;
+				
+				case 7:
+					dialogePaused = true;
+					obj_cage.targetY = obj_cage.roomFloor;
+					var _z = instance_create_layer(224,128,"Instances",obj_endZone);
+					_z.image_xscale = 2;
+					_z.image_yscale = 2;
+				
+					var _rider = instance_create_layer(0,0,"Instances",obj_cageRider);
+					_rider.sprite_index = spr_orcIdle;
+					break;
+		
+			}
+		}
 		textX = textBoxX + textXPadding;
 		textY = textBoxY + textYPadding;
 	}

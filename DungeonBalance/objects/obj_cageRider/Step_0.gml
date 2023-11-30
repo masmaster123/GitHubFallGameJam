@@ -19,6 +19,9 @@ if(obj_cage.y != obj_cage.roomFloor){
 		case spr_wraithIdle:
 		instance_create_layer(x,y,"Instances",obj_wraith);
 		break;
+		case spr_orcIdle:
+		instance_create_layer(x,y,"Instances",obj_orc);
+		break;
 	}
 
 	instance_destroy(id);

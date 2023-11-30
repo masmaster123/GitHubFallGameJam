@@ -30,4 +30,7 @@ idleSprite = spr_enemy;
 walkingSprite = spr_enemy;
 yLocked = false;
 
+canShatter = true;
+isShattered = false;
+shatterTime = 240;
 abducted = false;

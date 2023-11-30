@@ -30,7 +30,7 @@ if(sprite_index != deathSprite){
 	//Attack Reset
 	if(sprite_index == attackSprite && image_index >= image_number -1){
 		scrSpriteChange(id,idleSprite,0);
-		alarm[0] = attackTime;
+		alarm[1] = 180;
 	}
 
 	//Damage on click
@@ -41,6 +41,7 @@ if(sprite_index != deathSprite){
 			if(room == Room_Cutscene)
 				obj_CutSceneController.dialogePaused = false;
 			scrSpriteChange(id,deathSprite,0);
+			alarm[0] = 600;
 		}
 	}
 

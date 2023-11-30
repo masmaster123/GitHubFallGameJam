@@ -37,6 +37,10 @@ switch(obj_playerPawn.playerLevel){
 }
 
 
+if(room == Room_Cutscene){
+	obj_playerPawn.x = 32;
+	obj_playerPawn.y = 224;
+}
 
 
 

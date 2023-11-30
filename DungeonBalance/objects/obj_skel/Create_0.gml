@@ -2,9 +2,6 @@
 // Inherit the parent event
 event_inherited();
 
-canShatter = true;
-isShattered = false;
-shatterTime = 240;
 
 walkSpeed = 0.1;
 canWalk = true;

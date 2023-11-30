@@ -12,6 +12,8 @@
     {"name":"inst_40DC0940_1_1_1_1_1_1","path":"rooms/Room_LevelSeven/Room_LevelSeven.yy",},
     {"name":"inst_614DA0CB_1_1_1_1_1_1","path":"rooms/Room_LevelSeven/Room_LevelSeven.yy",},
     {"name":"inst_53CB053","path":"rooms/Room_LevelSeven/Room_LevelSeven.yy",},
+    {"name":"inst_65603D36","path":"rooms/Room_LevelSeven/Room_LevelSeven.yy",},
+    {"name":"inst_7D527BCA","path":"rooms/Room_LevelSeven/Room_LevelSeven.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -30,6 +32,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_40DC0940_1_1_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":62.0,"x":448.0,"y":-448.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_614DA0CB_1_1_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_cage","path":"objects/obj_cage/obj_cage.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":432.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_53CB053","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_roundSeven","path":"objects/obj_roundSeven/obj_roundSeven.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":16.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_65603D36","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rockworm","path":"objects/obj_rockworm/obj_rockworm.yy",},"properties":[],"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":320.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D527BCA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rockworm","path":"objects/obj_rockworm/obj_rockworm.yy",},"properties":[],"rotation":-90.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":464.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"ts_background","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":34,"SerialiseWidth":30,"TileCompressedData":[
 5,9,10,-2147483648,-2147483648,68,-6,-2147483648,2,268435532,-2147483648,-5,0,1,68,-6,-2147483648,10,268435532,-2147483648,-2147483648,0,0,9,10,-2147483648,-2147483648,76,-6,-2147483648,

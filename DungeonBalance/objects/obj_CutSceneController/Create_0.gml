@@ -70,7 +70,14 @@ dialogArraySix[6] = "Clicking on them until they explode.";
 dialogArraySix[7] = "The good news is that you only have one more level to balance left before you have rebalanced the dungeon.";
 dialogArraySix[8] = "Just splat the rockworm on the ceiling to start the next level.";
 
-dialogArraySeven[0] = "";
+dialogArraySeven[0] = "You have finally made it to the last level of the dungeon. Once you have completed balancing this last level I will bestow a great gift upon you for your service.";
+dialogArraySeven[1] = "My lord! You are too kind.";
+dialogArraySeven[2] = "Don't thank me too soon. The seventh level will be your hardest challenge yet.";
+dialogArraySeven[3] = "Isn't the seventh level managed by Throcknar, The Orcish Desolator?";
+dialogArraySeven[4] = "It was. Unfortunately he was tripped by some goblins on the way to the seventh level this morning and fell into the lava pit.";
+dialogArraySeven[5] = "That can not be good.";
+dialogArraySeven[6] = "The rest of the orcs on the level are out for goblin blood. It might be best to try and keep the goblins and orcs separate.";
+dialogArraySeven[7] = "Fling the orc onto the platform to start the next level. ";
 
 
 dialogArray = dialogArrayOne;

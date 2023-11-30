@@ -1,6 +1,6 @@
-/// @description Rockworm can attack
-canAttack = true;
-
+/// @description Death 
+currentHealth = maxHealth;
+scrSpriteChange(id,idleSprite,0);
 
 
 
