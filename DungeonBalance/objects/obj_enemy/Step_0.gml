@@ -87,9 +87,10 @@ if(!selected && !abducted){
 
 	//out of room cleanup
 	if(y > room_height + 32){
-		if(room != Room_LevelFive && room != Room_LevelSix && room != Room_LevelSeven)
+		if(room != Room_LevelFive && room != Room_LevelSix && room != Room_LevelSeven){
+			audio_play_sound(deathSound,3,false);
 			instance_destroy(id);
-		else{
+		}else{
 			if(!pendingDestroy){
 				if(x < room_width / 2)
 					var _x = irandom_range(100,175);
@@ -98,6 +99,7 @@ if(!selected && !abducted){
 				var _g = instance_create_layer(_x,200,"Instances",obj_graveStone);
 				_g.weight = weight;
 				pendingDestroy = true;
+				audio_play_sound(deathSound,3,false);
 				alarm[0] = 120;
 			}
 		}

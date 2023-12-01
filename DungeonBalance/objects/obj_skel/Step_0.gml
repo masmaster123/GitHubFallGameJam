@@ -4,6 +4,7 @@ event_inherited();
 if(!isShattered && canShatter && vsp > 2 && instance_place(x,bbox_bottom + vsp, obj_scale)){
 	isShattered = true;
 	hsp = 0;
+	audio_play_sound(snd_Pop,3,false);
 	scrSpriteChange(id,shatterSprite,0);
 	alarm[0] = shatterTime;
 	selectable = false;

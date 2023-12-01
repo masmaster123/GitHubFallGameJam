@@ -6,3 +6,4 @@ targetPawn = noone;
 walkingSprite = spr_OrcWalk;
 idleSprite = spr_orcIdle;
 attackSprite = spr_orcAttack;
+deathSound = snd_orcDie;

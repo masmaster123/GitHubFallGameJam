@@ -35,3 +35,4 @@ isShattered = false;
 shatterTime = 240;
 abducted = false;
 pendingDestroy = false;
+deathSound = snd_GobDie;

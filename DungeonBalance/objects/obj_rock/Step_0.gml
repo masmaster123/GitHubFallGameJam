@@ -25,6 +25,7 @@ if(place_meeting(x,y + vsp, obj_scale)){
 
 if(position_meeting(mouse_x,mouse_y,id) && isDestructable && mouse_check_button_pressed(mb_left)){
 	currentHealth = scrApproach(currentHealth,0,1);
+	audio_play_sound(snd_Click,3,false);
 	instance_create_layer(mouse_x,mouse_y,"Instances",obj_hitMarker);
 	if(currentHealth == 0){
 		for(var i = 0; i< 4; i++){

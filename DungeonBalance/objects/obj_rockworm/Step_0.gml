@@ -38,10 +38,13 @@ if(sprite_index != deathSprite){
 		instance_create_layer(mouse_x,mouse_y,"Instances",obj_hitMarker);
 		currentHealth = scrApproach(currentHealth,0,1);
 		if(currentHealth == 0){
+			audio_play_sound(snd_Click,3,false);
 			if(room == Room_Cutscene)
 				obj_CutSceneController.dialogePaused = false;
 			scrSpriteChange(id,deathSprite,0);
 			alarm[0] = 600;
+		}else{
+			audio_play_sound(snd_Click,3,false);
 		}
 	}
 

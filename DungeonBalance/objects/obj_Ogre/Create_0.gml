@@ -8,3 +8,4 @@ toss_vsp = 2;
 walkingSprite = spr_orgeWalk;
 scaleFriction = 1;
 pointsWorth = 5;
+deathSound = snd_OgreDie;

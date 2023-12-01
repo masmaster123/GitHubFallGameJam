@@ -51,7 +51,9 @@ if(!obj_roundControllerParent.roundWon){
 	if(position_meeting(mouse_x,mouse_y,id) && mouse_check_button_pressed(mb_left) && sprite_index != spr_wraithDie){
 		instance_create_layer(mouse_x,mouse_y,"Instances",obj_hitMarker);
 		currentHealth = scrApproach(currentHealth,0,1);
+		audio_play_sound(snd_Click,3,false);
 		if(currentHealth == 0){
+			audio_play_sound(snd_wraithKilled,3,false);
 			//remove pawn if one is grabbed
 			if(grabbedPawn != noone){
 				grabbedPawn.abducted = false;
@@ -63,6 +65,8 @@ if(!obj_roundControllerParent.roundWon){
 				obj_CutSceneController.dialogePaused = false;
 				obj_CutSceneController.savedTim = true;
 			}
+		}else{
+			audio_play_sound(snd_Click,3,false);
 		}
 	}
 	//Death clean up

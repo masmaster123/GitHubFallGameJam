@@ -14,10 +14,13 @@ if(room != Room_Cutscene){
 	}
 	
 	if(scale_left.y >= 500 || scale_right.y >= 500 ){
-		scale_left.roundLost = true;
-		scale_right.roundLost = true;
-		obj_roundControllerParent.roundLost = true;
-		roundLost = true;
+		if(!roundLost){
+			audio_play_sound(snd_levelLost,3,false);
+			scale_left.roundLost = true;
+			scale_right.roundLost = true;
+			obj_roundControllerParent.roundLost = true;
+			roundLost = true;
+		}
 	}
 }
 
