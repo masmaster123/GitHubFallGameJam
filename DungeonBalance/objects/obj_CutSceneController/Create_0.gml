@@ -79,6 +79,15 @@ dialogArraySeven[5] = "That can not be good.";
 dialogArraySeven[6] = "The rest of the orcs on the level are out for goblin blood. It might be best to try and keep the goblins and orcs separate.";
 dialogArraySeven[7] = "Fling the orc onto the platform to start the next level. ";
 
+dialogArrayEight[0] = "My trusted and valued servant. You shall be given something that I hold very dear to my heart for your service. Something that I never thought I could part with . . .";
+dialogArrayEight[1] = "My Lord! Just your praise is enough. I don't need anything else.";
+dialogArrayEight[2] = "My loyal subjects need to be rewarded, please step forward and claim your prize. ";
+dialogArrayEight[3] = "My lord, what is this? It can not be! Is this what I think it is? ";
+dialogArrayEight[4] = "Yes, Yes it is.";
+dialogArrayEight[5] = "A gift card to Chillis?";
+dialogArrayEight[6] = "Excellent observation my acute companion. It has three whole dollars on it.";
+dialogArrayEight[7] = "Use it wisely. ";
+dialogArrayEight[8] = "I am at a loss for words . . .   ";
 
 dialogArray = dialogArrayOne;
 dialogCounter = 0;
@@ -106,4 +115,6 @@ savedTim = false;
 
 //Send player pawn to location
 obj_playerPawn.targetX = 237;
+
+playerWin = false;
 

@@ -73,18 +73,16 @@ if(!selected && !abducted){
 				}else
 					_selected_enemy.y = _scale.bbox_top + 1;
 			}
-			//show_debug_message(ds_list_size(obj_scaleControler.selected_list));
-			//show_debug_message(((_selected_enemy.x - past_mouse_x) / 150) * toss_hsp);
-			//show_debug_message(((_selected_enemy.y - past_mouse_y) / 150) * toss_vsp);
-			//show_debug_message(_selected_enemy);
 			ds_list_delete(obj_scaleControler.selected_list,ds_list_find_index(obj_scaleControler.selected_list,_selected_enemy));
 		}
 	}
 	//Out of bounds teleport
 	if(x > room_width || x < 0){
-		x = room_width/2;
-		y = - 32;
-		vsp = vsp/2;
+		if(!pendingDestroy){
+			x = room_width/2;
+			y = - 32;
+			vsp = vsp/2;
+		}
 	}
 
 	//out of room cleanup
@@ -92,13 +90,16 @@ if(!selected && !abducted){
 		if(room != Room_LevelFive && room != Room_LevelSix && room != Room_LevelSeven)
 			instance_destroy(id);
 		else{
-			if(x < room_width / 2)
-				var _x = irandom_range(100,175);
-			else
-				var _x = irandom_range(320,380);
-			var _g = instance_create_layer(_x,200,"Instances",obj_graveStone);
-			_g.weight = weight;
-			instance_destroy(id);
+			if(!pendingDestroy){
+				if(x < room_width / 2)
+					var _x = irandom_range(100,175);
+				else
+					var _x = irandom_range(320,380);
+				var _g = instance_create_layer(_x,200,"Instances",obj_graveStone);
+				_g.weight = weight;
+				pendingDestroy = true;
+				alarm[0] = 120;
+			}
 		}
 	}
 

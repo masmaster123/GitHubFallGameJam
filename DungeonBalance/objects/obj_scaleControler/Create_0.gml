@@ -10,4 +10,4 @@ selected_list = ds_list_create();
 roundLost = false;
 lastMouseX = 0;
 lastMouseY = 0;
-mouseResetTime = 1;
+mouseResetTime = 0.25;

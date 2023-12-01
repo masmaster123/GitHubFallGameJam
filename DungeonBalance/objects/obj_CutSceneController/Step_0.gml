@@ -332,6 +332,47 @@ if(mouse_check_button_pressed(mb_left) && !dialogePaused){
 		
 			}
 		}
+		if(obj_playerPawn.playerLevel == 7){
+			//Check and change text position
+			switch(dialogCounter){
+				case 0:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					break;
+				
+				case 1:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+					break;
+				
+				case 2:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					break;
+				
+				case 3:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+					break;
+				case 4:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					break;
+				case 5:
+					textBoxX = playerTextX;
+					textBoxY = playerTextY;
+					break;
+				
+				case 6:
+					textBoxX = kingTextX;
+					textBoxY = kingTextY;
+					break;
+				
+				case 7:
+					playerWin = true;
+					break;
+			}
+		}
 		textX = textBoxX + textXPadding;
 		textY = textBoxY + textYPadding;
 	}
@@ -360,8 +401,10 @@ if(mouse_check_button_pressed(mb_left) && !dialogePaused){
 				var target_room = Room_LevelSeven;
 			break;
 		}
-		var _transition = instance_create_layer(0, 0, "Instances", obj_transitionPixelate);
-		_transition.target_room = target_room;
+		if(obj_playerPawn.playerLevel != 7){
+			var _transition = instance_create_layer(0, 0, "Instances", obj_transitionPixelate);
+			_transition.target_room = target_room;
+		}
 	}
 }
 

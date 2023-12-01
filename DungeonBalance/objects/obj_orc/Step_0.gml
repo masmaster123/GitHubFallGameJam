@@ -2,7 +2,7 @@
 event_inherited();
 
 if(room != Room_Cutscene){
-	if( scale_meeting != noone && !abducted && !selected){
+	if(scale_meeting != noone && !abducted && !selected){
 		//Find target
 		if(targetPawn == noone){
 			var _g = instance_nearest(x,y,obj_goblin);
@@ -30,7 +30,7 @@ if(room != Room_Cutscene){
 			}
 			
 			//Target lost
-			if(targetPawn != noone && abs(x - targetPawn.x) >= 100 || abs(y - targetPawn.y)>= sprite_height){
+			if(targetPawn != noone && (abs(x - targetPawn.x) >= 100 || abs(y - targetPawn.y)>= sprite_height)){
 				targetPawn = noone;
 				hsp = 0;
 				if(sprite_index != idleSprite)
@@ -47,6 +47,5 @@ if(room != Room_Cutscene){
 	}
 	if(sprite_index == attackSprite && image_index >= image_number -1)
 		scrSpriteChange(id,idleSprite,0);
-	
 	}
 }

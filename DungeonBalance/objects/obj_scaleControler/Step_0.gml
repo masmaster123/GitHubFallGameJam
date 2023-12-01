@@ -30,7 +30,7 @@ if(mouse_check_button(mb_left)){
 			_pawn.past_mouse_x = mouse_x;
 			_pawn.past_mouse_y = mouse_y;
 		}
-		mouseResetTime = 1;
+		mouseResetTime = 0.25;
 	}
 }
 
@@ -44,12 +44,9 @@ if(mouse_check_button_pressed(mb_right)){
 }
 
 
-if(roundLost && keyboard_check(ord("R")))
+if(roundLost && mouse_check_button_pressed(mb_right))
 	room_restart();
 
-
-if(keyboard_check_pressed(vk_escape))
-	game_end();
 
 //keep mouse in frame
 window_mouse_set(clamp(window_mouse_get_x(), 0, window_get_width()), clamp(window_mouse_get_y(), 0, window_get_height()));

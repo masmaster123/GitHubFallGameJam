@@ -15,3 +15,5 @@ roundLost = false;
 roundWon = false;
 
 roundName = "Level One";
+
+transitionStarted = false;

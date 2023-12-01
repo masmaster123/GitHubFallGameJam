@@ -5,3 +5,4 @@
 event_inherited();
 
 roundName = "Level Seven";
+roundTimeLimit = 60;

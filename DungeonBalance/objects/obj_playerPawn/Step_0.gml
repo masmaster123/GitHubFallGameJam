@@ -20,6 +20,6 @@ if(x == targetX){
 }
 
 
-if(keyboard_check_pressed(vk_enter)){
+if(mouse_check_button_pressed(mb_left) && room == Room_Title){
 	var _transition = instance_create_layer(0, 0, "Instances", obj_transitionPixelate);
 }

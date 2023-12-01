@@ -1,12 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-currentHealth = 5;
-maxHealth = 5;
+currentHealth = 3;
+maxHealth = 3;
 canAttack = true;
 attackTime = 180;
 
-deathTime = 600;
+deathTime = 1600;
 
 
 idleSprite = spr_rockWormIdle;

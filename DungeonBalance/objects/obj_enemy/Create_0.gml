@@ -34,3 +34,4 @@ canShatter = true;
 isShattered = false;
 shatterTime = 240;
 abducted = false;
+pendingDestroy = false;

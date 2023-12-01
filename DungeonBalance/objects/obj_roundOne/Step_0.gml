@@ -24,7 +24,7 @@ if(!roundLost){
 	}
 	
 	if(roundTime >= 25.00 && spawnCounter == 4){
-		SpawnPawns(obj_goblin,scaleLeftX[0],200,4,16,5);
+		SpawnPawns(obj_goblin,scaleRightX[0],200,4,16,2);
 		spawnCounter++;
 	}
 	

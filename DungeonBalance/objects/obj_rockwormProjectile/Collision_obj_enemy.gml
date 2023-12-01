@@ -1,5 +1,5 @@
 
-if(!other.isShattered){
+if(!other.isShattered && !other.abducted){
 	if(x < other.x)
 		other.hsp += force;
 	else

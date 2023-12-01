@@ -4,4 +4,10 @@ if(displayDialog){
 }
 
 
+if(playerWin){
+	draw_set_font(fnt_Big);
+	draw_text(view_get_wport(0)/2,view_get_hport(0)/2,"You Win!! \n Thanks for playing!")
+}
+
+
 
