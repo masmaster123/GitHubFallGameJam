@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(room == Room_Cutscene){
-	audio_stop_all();
-	//Play cutscene bgm
-	//audio_play_sound(snd_ParticleVoyager,5,true);
+	if(audio_is_playing(snd_ParticleVoyager)){
+		audio_stop_all();
+		//Play cutscene bgm
+		audio_play_sound(snd_cave,5,true);
+	}
 }
 
 switch(obj_playerPawn.playerLevel){
