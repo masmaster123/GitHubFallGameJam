@@ -1,7 +1,7 @@
 // Inherit the parent event
 
 currentHealth = 5;
-
+roundCompeleted = false;
 selectable = false;
 enemyHealth = 5;
 targetPawn = noone;

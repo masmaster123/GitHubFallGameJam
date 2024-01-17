@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description update player direction
+image_xscale = 1;
 
 
 

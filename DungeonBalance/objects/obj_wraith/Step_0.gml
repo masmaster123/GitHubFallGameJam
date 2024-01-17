@@ -3,13 +3,12 @@ if(sprite_index == spr_wraithSpawn && image_index >= image_number-1)
 	scrSpriteChange(id,idleSprite,0);
 
 
-if(!obj_roundControllerParent.roundWon){
-	if(sprite_index != spr_wraithSpawn && sprite_index != spr_wraithDie){
+	if(sprite_index != spr_wraithSpawn && sprite_index != spr_wraithDie && !roundCompeleted){
 		//Find a new target if one does not exist, move to abduct 
 		if(targetPawn == noone){
 			targetPawn = instance_find(obj_enemy,irandom_range(0,instance_number(obj_enemy)));
 		}else{
-			if(targetPawn.y < room_height){
+			if(targetPawn.y < room_height && targetPawn.y != -32){
 				if(x != targetPawn.x){
 					x = scrApproach(x,targetPawn.x,wraithSpeed);
 					if(x < targetPawn.x + 5)
@@ -77,4 +76,3 @@ if(!obj_roundControllerParent.roundWon){
 			grabbedPawn = noone;
 		instance_destroy(id);
 	}
-}

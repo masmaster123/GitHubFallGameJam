@@ -27,3 +27,6 @@ if(mouse_check_button_pressed(mb_left) && room == Room_Title){
 if(room == Room_Title && !audio_is_playing(snd_cave)){
 	audio_play_sound(snd_cave,3,true);
 }
+
+if(keyboard_check(vk_escape))
+	game_end();

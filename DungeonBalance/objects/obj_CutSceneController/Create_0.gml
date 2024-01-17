@@ -95,14 +95,14 @@ displayText = "";
 
 
 
-kingTextX = view_get_wport(0) - view_get_wport(0)/2.7;
-kingTextY = view_get_hport(0)/4;
+kingTextX = view_get_wport(0)/2;
+kingTextY = view_get_hport(0)/8;
 
-playerTextX = view_get_wport(0)/3;
+playerTextX = view_get_wport(0)/4;
 playerTextY = view_get_hport(0)/2;
 
-textBoxX = view_get_wport(0) - view_get_wport(0)/2.7;
-textBoxY = view_get_hport(0)/4;
+textBoxX = view_get_wport(0)/2;
+textBoxY = view_get_hport(0)/8;
 
 textXPadding = 8;
 textYPadding = 4;
