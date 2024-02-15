@@ -26,9 +26,17 @@ if(!isShattered && sprite_index == idleSprite && scale_meeting != noone && !obj_
 	scrSpriteChange(id,walkingSprite,0);
 }
 
+if(sprite_index == walkingSprite && obj_roundControllerParent.roundWon){
+	scrSpriteChange(id,idleSprite,0);
+	hsp = 0;
+}
+
 if(sprite_index == walkingSprite && !selected){
 	hsp = walkSpeed * image_xscale;
 }
+//Stop moving if round is won
+if(room != Room_Cutscene && obj_roundControllerParent.roundWon && hsp != 0)
+	hsp = 0;
 
 if(selected && sprite_index == walkingSprite)
 	scrSpriteChange(id,idleSprite,0);

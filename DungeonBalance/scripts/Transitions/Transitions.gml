@@ -1,6 +1,6 @@
 global.midTransition = false;
 global.roomTarget = -1;
-
+global.warningHeight = 280;
 //Places sequences in the room
 function TransitionPlaceSequence(_type){
 	if(layer_exists("transition")) layer_destroy("transition");

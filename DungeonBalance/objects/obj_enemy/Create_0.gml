@@ -28,6 +28,7 @@ past_mouse_x = 0;
 past_mouse_y = 0;
 idleSprite = spr_enemy;
 walkingSprite = spr_enemy;
+cheerSprite = spr_gobCheer;
 yLocked = false;
 
 canShatter = true;

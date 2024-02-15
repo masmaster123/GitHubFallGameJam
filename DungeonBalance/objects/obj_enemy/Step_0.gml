@@ -121,8 +121,6 @@ if(!selected && !abducted){
 
 if(!obj_cage.cageMoving && obj_cage.roundOver){
 	yLocked = true;
-	x = scrApproach(x,room_width + 32,1);
-	image_xscale = 1;
-	if(sprite_index != walkingSprite)
-		scrSpriteChange(id,walkingSprite,0);
+	if(sprite_index != cheerSprite)
+		scrSpriteChange(id,cheerSprite,0);
 }

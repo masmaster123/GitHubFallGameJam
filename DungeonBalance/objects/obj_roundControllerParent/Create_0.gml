@@ -2,7 +2,7 @@
 roundTime = 0;
 roundTimeLimit = 45;
 view_scale = 4;
-
+warningHeight = 280;
 
 //Acceptable spawn ranges
 scaleLeftX[0] = 80;
